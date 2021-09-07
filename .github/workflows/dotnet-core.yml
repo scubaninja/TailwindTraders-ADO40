@@ -24,6 +24,6 @@ jobs:
 
     - run: |
         cd Source/Tailwind.Traders.Web  
-        docker build . -t ttacrbyskvloe5jfqa.azurecr.io/tailwindtraders-ado40:${{ github.sha }} - t ttacrbyskvloe5jfqa.azurecr.io/tailwindtraders-ado40:latest
+        docker build -t ttacrbyskvloe5jfqa.azurecr.io/tailwindtraders-ado40:${{ github.sha }} -t ttacrbyskvloe5jfqa.azurecr.io/tailwindtraders-ado40:latest .
         docker push ttacrbyskvloe5jfqa.azurecr.io/tailwindtraders-ado40
         cd ..
